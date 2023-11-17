@@ -8,13 +8,6 @@ use Illuminate\Support\Str;
 
 class KanyeQuoteController extends Controller
 {
-    protected ?Client $client;
-
-    public function __construct(Client $client = null)
-    {
-        $this->client = $client ?? new Client();
-    }
-
 
     /**
      * Fetch a random Kanye West quote.
